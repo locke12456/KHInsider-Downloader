@@ -18,7 +18,7 @@ A PyQt6 GUI application for batch downloading game soundtracks from [downloads.k
 
 ## Screenshots
 
-*(Add screenshots here)*
+None
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ A PyQt6 GUI application for batch downloading game soundtracks from [downloads.k
 
 ```
 
-git clone --recurse-submodules https://github.com/YOUR_USERNAME/khinsider-downloader.git
+git clone --recurse-submodules https://github.com/locke12456/KHInsider-Downloader.git
 
 cd khinsider-downloader
 
@@ -57,7 +57,7 @@ pip install -r requirements.txt
 
 ```
 
-python khinsider_downloader_[gui.py](http://gui.py)
+python khinsider_downloader_gui.py
 
 ```
 
@@ -101,7 +101,7 @@ python -m PyInstaller --noconfirm --onefile --windowed \
 
 --add-data "khinsider:khinsider" \
 
-khinsider_downloader_[gui.py](http://gui.py)
+khinsider_downloader_gui.py
 
 ```
 
@@ -112,32 +112,19 @@ The executable will be in the `dist/` folder.
 ```
 
 khinsider-downloader/
-
 ├── khinsider/                  # git submodule (obskyr/khinsider)
-
-│   └── [khinsider.py](http://khinsider.py)
-
+│   └── khinsider.py
 ├── locales/
-
 │   ├── en.yml
-
 │   ├── zh-TW.yml
-
 │   ├── zh.yml
-
 │   ├── ja.yml
-
 │   └── ko.yml
-
-├── khinsider_downloader_[gui.py](http://gui.py) # Main application
-
+├── khinsider_downloader_gui.py # Main application
 ├── requirements.txt
-
 ├── build.bat                   # Windows build script
-
-├── [build.sh](http://build.sh)                    # Linux/macOS build script
-
-└── [README.md](http://README.md)
+├── build.sh                    # Linux/macOS build script
+└── README.md
 
 ```
 

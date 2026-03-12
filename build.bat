@@ -16,6 +16,9 @@ python -m PyInstaller ^
     --name "KHInsider Downloader" ^
     --add-data "locales;locales" ^
     --add-data "khinsider;khinsider" ^
+    --hidden-import bs4 ^
+    --hidden-import requests ^
+    --hidden-import yaml ^
     --icon NONE ^
     khinsider_downloader_gui.py
 

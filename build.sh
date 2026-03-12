@@ -1,29 +1,31 @@
-#!/usr/bin/env bash
-set -e
+@echo off
+echo === KHInsider Downloader Build (Windows) ===
 
-echo "=== KHInsider Downloader Build (Linux/macOS) ==="
-
-# Install build dependency
+REM Install build dependency
 pip install pyinstaller
 
-# Clean previous build
-rm -rf dist build
+REM Clean previous build
+if exist dist rmdir /s /q dist
+if exist build rmdir /s /q build
 
-# Build
-python -m PyInstaller \
-    --noconfirm \
-    --onefile \
-    --windowed \
-    --name "KHInsider Downloader" \
-    --add-data "locales:locales" \
-    --add-data "khinsider:khinsider" \
+REM Build
+python -m PyInstaller ^
+    --noconfirm ^
+    --onefile ^
+    --windowed ^
+    --name "KHInsider Downloader" ^
+    --add-data "locales;locales" ^
+    --add-data "khinsider;khinsider" ^
+    --hidden-import bs4 ^
+    --hidden-import requests ^
+    --hidden-import yaml ^
+    --icon NONE ^
     khinsider_downloader_gui.py
 
-if [ -f "dist/KHInsider Downloader" ]; then
-    echo ""
-    echo "Build successful! Output: dist/KHInsider Downloader"
-    chmod +x "dist/KHInsider Downloader"
-else
-    echo "Build failed!"
-    exit 1
-fi
+echo.
+if exist "dist\KHInsider Downloader.exe" (
+    echo Build successful! Output: dist\KHInsider Downloader.exe
+) else (
+    echo Build failed!
+)
+pause

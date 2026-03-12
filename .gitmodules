@@ -1,0 +1,3 @@
+[submodule "khinsider"]
+	path = khinsider
+	url = https://github.com/obskyr/khinsider.git

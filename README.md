@@ -1,4 +1,4 @@
-```markdown
+
 # KHInsider Downloader
 
 A PyQt6 GUI application for batch downloading game soundtracks from [downloads.khinsider.com](https://downloads.khinsider.com).
@@ -150,4 +150,4 @@ khinsider-downloader/
 ## License
 
 MIT License
-```
+

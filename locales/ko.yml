@@ -1,0 +1,47 @@
+ko:
+  app:
+    title: "KHInsider 다운로더"
+  album:
+    group_title: "앨범"
+    url_placeholder: "앨범 URL 또는 slug 입력 (예: pangya-windows-gamerip-2004)"
+    load: "불러오기"
+  options:
+    format: "형식:"
+    output_dir: "출력 디렉토리:"
+    output_placeholder: "(기본값: 앨범명으로 폴더 생성)"
+    browse: "찾아보기…"
+  table:
+    track: "곡명"
+    size: "크기"
+    status: "상태"
+  selection:
+    select_all: "전체 선택"
+    deselect_all: "전체 해제"
+    count: "총 %{count} 곡"
+  download:
+    download_selected: "다운로드"
+    cancel: "취소"
+  status:
+    ready: "준비 완료"
+    loading: "%{album_id} 불러오는 중…"
+    connecting: "KHInsider 연결 중…"
+    parsing: "앨범 페이지 분석 중…"
+    extracting: "트랙 정보 추출 중…"
+    loaded: "불러오기 완료: %{name} (%{count} 곡, 형식: %{formats})"
+    load_failed: "불러오기 실패: %{msg}"
+    downloading: "다운로드 중…"
+    dl_progress: "다운로드 중 (%{current}/%{total}): %{filename}"
+    dl_done: "다운로드 완료! 성공 %{succeeded} 곡"
+    dl_done_with_fail: "다운로드 완료! 성공 %{succeeded} 곡, 실패 %{failed} 곡"
+    cancelling: "취소 중…"
+    waiting: "⏳ 대기 중"
+    done: "✅ 완료"
+    failed: "❌ 실패"
+  dialog:
+    load_failed_title: "불러오기 실패"
+    complete_title: "완료"
+    hint_title: "안내"
+    select_at_least_one: "최소 1곡 이상 선택해주세요."
+    choose_output_dir: "출력 디렉토리 선택"
+  language:
+    label: "언어:"

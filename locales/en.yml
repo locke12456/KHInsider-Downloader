@@ -1,0 +1,47 @@
+en:
+  app:
+    title: "KHInsider Downloader"
+  album:
+    group_title: "Album"
+    url_placeholder: "Enter album URL or slug, e.g. pangya-windows-gamerip-2004"
+    load: "Load"
+  options:
+    format: "Format:"
+    output_dir: "Output directory:"
+    output_placeholder: "(Default: create folder with album name)"
+    browse: "Browse\u2026"
+  table:
+    track: "Track"
+    size: "Size"
+    status: "Status"
+  selection:
+    select_all: "Select All"
+    deselect_all: "Deselect All"
+    count: "%{count} tracks"
+  download:
+    download_selected: "Download"
+    cancel: "Cancel"
+  status:
+    ready: "Ready"
+    loading: "Loading %{album_id}\u2026"
+    connecting: "Connecting to KHInsider\u2026"
+    parsing: "Parsing album page\u2026"
+    extracting: "Extracting track info\u2026"
+    loaded: "Loaded: %{name} (%{count} tracks, formats: %{formats})"
+    load_failed: "Load failed: %{msg}"
+    downloading: "Downloading\u2026"
+    dl_progress: "Downloading (%{current}/%{total}): %{filename}"
+    dl_done: "Download complete! %{succeeded} succeeded"
+    dl_done_with_fail: "Download complete! %{succeeded} succeeded, %{failed} failed"
+    cancelling: "Cancelling\u2026"
+    waiting: "\u23f3 Waiting"
+    done: "\u2705 Done"
+    failed: "\u274c Failed"
+  dialog:
+    load_failed_title: "Load Failed"
+    complete_title: "Complete"
+    hint_title: "Hint"
+    select_at_least_one: "Please select at least one track."
+    choose_output_dir: "Choose output directory"
+  language:
+    label: "Lang:"

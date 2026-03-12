@@ -1,0 +1,47 @@
+zh:
+  app:
+    title: "KHInsider 下载器"
+  album:
+    group_title: "专辑"
+    url_placeholder: "输入专辑 URL 或 slug，例如 pangya-windows-gamerip-2004"
+    load: "加载"
+  options:
+    format: "格式："
+    output_dir: "输出目录："
+    output_placeholder: "（默认：以专辑名称创建文件夹）"
+    browse: "浏览…"
+  table:
+    track: "曲名"
+    size: "大小"
+    status: "状态"
+  selection:
+    select_all: "全选"
+    deselect_all: "全不选"
+    count: "共 %{count} 首"
+  download:
+    download_selected: "下载选取"
+    cancel: "取消"
+  status:
+    ready: "就绪"
+    loading: "正在加载 %{album_id} ..."
+    connecting: "正在连接 KHInsider…"
+    parsing: "正在解析专辑页面…"
+    extracting: "正在提取曲目信息…"
+    loaded: "已加载：%{name}（%{count} 首，格式：%{formats}）"
+    load_failed: "加载失败：%{msg}"
+    downloading: "下载中…"
+    dl_progress: "下载中 (%{current}/%{total})：%{filename}"
+    dl_done: "下载完成！成功 %{succeeded} 首"
+    dl_done_with_fail: "下载完成！成功 %{succeeded} 首，失败 %{failed} 首"
+    cancelling: "正在取消…"
+    waiting: "⏳ 等待中"
+    done: "✅ 完成"
+    failed: "❌ 失败"
+  dialog:
+    load_failed_title: "加载失败"
+    complete_title: "完成"
+    hint_title: "提示"
+    select_at_least_one: "请至少勾选一首歌曲。"
+    choose_output_dir: "选择输出目录"
+  language:
+    label: "语言："
